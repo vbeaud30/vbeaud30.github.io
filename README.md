@@ -49,6 +49,20 @@ git clone https://github.com/vbeaud30/<nom-du-depot>.git
 cd <nom-du-depot>
 ```
 
+Ouvre ensuite `index.html` dans ton navigateur, ou lance un petit serveur local :
+
+```bash
+python -m http.server 8000
+```
+
+Le site est alors disponible sur http://localhost:8000.
+
+## Publier avec GitHub Pages
+
+1. Place les fichiers à la racine du dépôt (`index.html` doit être à la racine).
+2. Sur GitHub : **Settings → Pages**.
+3. Dans **Source**, choisis **Deploy from a branch**, puis la branche `main` et le dossier `/ (root)`.
+4. Le site est publié à l’adresse `https://vbeaud30.github.io/<nom-du-depot>/`.
 
 ## Contact
 
