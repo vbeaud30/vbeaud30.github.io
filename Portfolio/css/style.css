@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap');
+
+:root { --bs-body-font-family: 'DM Sans', sans-serif; }
+
+body { line-height: 1.65; }
+body.bg-body-tertiary { background-color: #f6f8fb !important; }
+h1, h2, h3 { letter-spacing: -.01em; }
+
+.icon-box { width: 3.5rem; height: 3.5rem; }
+
+/* Cartes */
+.card.border-0 { border: 1px solid #e3e8ef !important; }
+.card.card-feature { border-left: 5px solid var(--bs-primary) !important; }
+.hover-lift { transition: transform .2s ease, box-shadow .2s ease; }
+.hover-lift:hover { transform: translateY(-4px); box-shadow: var(--bs-box-shadow-lg) !important; }
+
+/* Bandeaux de titre : bleu très clair */
+.hero-band, body > section.text-center:not(.bg-dark) { background-color: #eaf2ff; border-bottom: 1px solid #d6e4fb; }
+body > section.text-center:not(.bg-dark) { margin: 0 0 2.5rem !important; }
+
+/* Frise chronologique */
+.timeline { margin-left: .5rem; padding-left: 2rem; border-left: 3px solid #b6d0fb; }
+.timeline-item { position: relative; margin-bottom: 1.5rem; }
+.timeline-item:last-child { margin-bottom: 0; }
+.timeline-item::before { content: ""; position: absolute; left: calc(-2rem - 9.5px); top: 1.5rem; width: 16px; height: 16px; border-radius: 50%; background: var(--bs-primary); border: 3px solid #f6f8fb; }
